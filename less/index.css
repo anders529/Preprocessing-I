@@ -157,3 +157,15 @@ header nav a {
   background-color: lightgrey;
   margin-top: 2%;
 }
+.top-content .inner {
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+}
+.top-content .inner div img {
+  width: 50%;
+}
+.top-content .inner .about {
+  width: 50%;
+  height: 100%;
+}
