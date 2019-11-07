@@ -155,6 +155,18 @@ header nav {
   margin-top: 5%;
   margin-bottom: 2%;
 }
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  header nav a {
+    padding: 5%;
+  }
+}
 header nav a {
   text-decoration: none;
   color: black;
@@ -198,6 +210,28 @@ header nav a:hover {
 .top-content .content button {
   margin-top: 5%;
 }
+@media (max-width: 500px) {
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .top-content .photo {
+    width: 100%;
+  }
+  .top-content .photo img {
+    width: 100%;
+    height: 100%;
+  }
+  .top-content .content {
+    width: 100%;
+  }
+  .top-content .content h1 {
+    font-size: 1em;
+  }
+}
 .middle-content {
   display: flex;
   flex-direction: row;
@@ -230,6 +264,22 @@ header nav a:hover {
 .middle-content .stuff ul li {
   border: 1px solid #CCC;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  .middle-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .middle-content .about {
+    width: 100%;
+    text-align: center;
+  }
+  .middle-content .stuff {
+    width: 100%;
+  }
 }
 .bottom-content {
   margin-top: 5%;
@@ -272,4 +322,25 @@ header nav a:hover {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .bottom-content div {
+    width: 100%;
+    text-align: center;
+  }
+  .bottom-content div h2 {
+    text-align: center;
+  }
+  .bottom-content .contact {
+    width: 100%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+  }
 }
