@@ -141,6 +141,8 @@ body {
 
 //Here is my less/css stuff.
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@color: #CCC;
+@fsize: 2rem;
 body {
   margin-left: 20%;
   margin-right: 20%;
@@ -158,10 +160,10 @@ header {
     a {
       text-decoration: none;
       color: black;
-     -webkit-transition: opacity 0.25s ease-in-out;
-     -moz-transition: opacity 0.25s ease-in-out;
-     -ms-transition: opacity 0.25s ease-in-out;
-     -o-transition: opacity 0.25s ease-in-out;
+      -webkit-transition: opacity 0.25s ease-in-out;
+      -moz-transition: opacity 0.25s ease-in-out;
+      -ms-transition: opacity 0.25s ease-in-out;
+      -o-transition: opacity 0.25s ease-in-out;
     }
     a:hover {
     color: black;
@@ -179,7 +181,7 @@ header {
   width: 100%;
   margin-top: 20%;
   padding: 5%;
-  background-color: lightgrey;
+  background-color:@color;
   .photo {
     width: 25%;
     img {
@@ -210,7 +212,7 @@ header {
       text-align: left;
       padding: 3%;
       h2 {
-        font-size: 2rem;
+        font-size: @fsize;
         margin-bottom: 3%;
       }
       p {
@@ -222,12 +224,13 @@ header {
       text-align: center;
       padding: 3%;
       h2 {
+        font-size: @fsize;
         margin-bottom: 3%;
       }
       ul {
         border: 1px solid black;
         li {
-          border: 1px solid lightgrey;
+          border: 1px solid @color;
           padding: 2%;
         }
       }
@@ -243,7 +246,7 @@ header {
     div {
       margin-bottom: 5%;
       h2 {
-        font-size: 2rem;
+        font-size: @fsize;
         text-align: left;
         margin-bottom: 2%;
       }
@@ -256,7 +259,15 @@ header {
         padding: 0.5rem;
         text-align: center;
       }
-      tr:nth-child(even) {background: #CCC}
+      tr:nth-child(even) {background: @color}
+    }
+    .contact {
+      text-align: center;
+      margin-top: 3%;
+      margin-bottom: 3%;
+      h1 {
+        margin-bottom: 2%;
+      }
     }
   footer {
   display: flex;
