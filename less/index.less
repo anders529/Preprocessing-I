@@ -140,9 +140,11 @@ body {
 }
 
 //Here is my less/css stuff.
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 body {
   margin-left: 20%;
   margin-right: 20%;
+  font-family: 'Roboto', sans-serif;
 }
 header {
   nav {
@@ -155,10 +157,22 @@ header {
     margin-bottom: 2%;
     a {
       text-decoration: none;
+      color: black;
+     -webkit-transition: opacity 0.25s ease-in-out;
+     -moz-transition: opacity 0.25s ease-in-out;
+     -ms-transition: opacity 0.25s ease-in-out;
+     -o-transition: opacity 0.25s ease-in-out;
+    }
+    a:hover {
+    color: black;
+    opacity: 1;
+    -webkit-transition: opacity 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out;
+    -ms-transition: opacity 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out;
     }
   }
 }
-
 .top-content {
   display: flex;
   flex-direction: row;
@@ -166,20 +180,27 @@ header {
   margin-top: 20%;
   padding: 5%;
   background-color: lightgrey;
-
   .photo {
-    width: 50%;
+    width: 25%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
   .content {
-    width: 50%;
+    width: 75%;
     justify-content: center;
     text-align: center;
+    
+    h1 {
+      padding-top: 15%;
+      font-size: 3rem;
+    }
     button {
       margin-top: 5%;
     }
   }
 }
-
 .middle-content {
   display: flex;
   flex-direction: row;
@@ -220,17 +241,18 @@ header {
   display: flex;
   flex-direction: column;
     div {
-      // margin-left: 35%;
       margin-bottom: 5%;
-
+      h2 {
+        font-size: 2rem;
+        text-align: left;
+        margin-bottom: 2%;
+      }
       table {
         border-collapse: collapse;
         width: 100%;
         height: 100%;
       }
-
       td, th {
-        // border: 1px solid #999;
         padding: 0.5rem;
         text-align: center;
       }
@@ -239,6 +261,6 @@ header {
   footer {
   display: flex;
   justify-content: center;
+  text-align: center;
   }
-
 }
